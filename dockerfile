@@ -1,7 +1,11 @@
-FROM python:alpine3.7
-COPY . /app
-WORKDIR /app
-RUN pip install -r requirements.txt
-EXPOSE 5001
-ENTRYPOINT [ "python" ]
-CMD [ "main1.py" ]
+FROM python:3.7.9
+
+WORKDIR \AsynchronousAPI
+
+COPY . .
+
+RUN pip install -r requirement.txt
+
+EXPOSE 5000
+
+CMD python3 main1.py
