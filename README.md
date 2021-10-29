@@ -10,7 +10,7 @@ Get method URL:
 http://localhost:5000/api/get
 
 Post and put method:
-http://localhost:5000/api/put
+http://localhost:5000/api/lang
 
 To run pytest:
 pytest -vv
