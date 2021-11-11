@@ -44,14 +44,6 @@ def modifyone(name):
     return jsonify({'language': langs[0]})
 
 
-@app.route('/updatealllang/<string:name>', methods=['PUT'])
-def modifytwo(name):
-    langs = [language for language in languages if language['name'] == name]
-    for lang in langs:
-        lang['name'] = request.json['name']
-    return jsonify({'language': langs})
-
-
 @app.route('/updateall', methods=['PUT'])
 def modifyall():
     # langs = [language for language in languages if language['name'] == name]
