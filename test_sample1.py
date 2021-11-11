@@ -13,12 +13,6 @@ HEADERS = {
 EXPECTED_JSON = {'language': {'name': 'java'}}
 
 
-def test_file1_method1():
-    x = 5
-    y = 6
-    assert 'x+1' != 'y', "test failed+"
-
-
 def test_get_all_data_request_fail():
     url = "http://192.168.0.132:5000/lang/"
 
